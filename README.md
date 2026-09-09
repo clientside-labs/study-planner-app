@@ -88,4 +88,6 @@ Architecture et plan de développement : [`docs/ARCHITECTURE.md`](docs/ARCHITECT
 Journal de travail : [`WORKLOG.md`](WORKLOG.md).
 
 
-free articfact working updated version (no database working locally) https://claude.ai/code/artifact/35ad372c-10e4-4e03-b2b4-2008cc7f9510
+
+
+## Free articfact working updated version (no database working locally) https://claude.ai/code/artifact/35ad372c-10e4-4e03-b2b4-2008cc7f9510
