@@ -4,6 +4,27 @@ Une entrée par tâche terminée, la plus récente en haut.
 
 ---
 
+## 2026-09-10 — Outillage : configuration des skills d'ingénierie (mattpocock-skills)
+
+- Plugin `mattpocock-skills@mattpocock` (v1.2.3, 25 skills) installé au niveau utilisateur ;
+  son skill `setup-matt-pocock-skills` exécuté sur ce dépôt. Aucune dépendance ajoutée au
+  projet : la configuration est uniquement documentaire.
+- `docs/agents/issue-tracker.md` : les issues vivent dans les GitHub Issues de
+  `AMoncade/study-planner-app`, pilotées par `gh`. Drapeau « PRs comme surface de demande »
+  laissé à **non** (dépôt solo, pas de PR externe à trier).
+- `docs/agents/triage-labels.md` : les cinq étiquettes canoniques conservées telles quelles
+  (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). Elles ne
+  sont pas encore créées sur GitHub — `/triage` les créera à la première utilisation.
+- `docs/agents/domain.md` : contexte unique (pas de monorepo). `CONTEXT.md` et `docs/adr/`
+  ne sont **pas** créés d'avance ; `/domain-modeling` les crée à la demande. Précisé dans le
+  document qu'ils ne remplacent pas `docs/ARCHITECTURE.md`, qui reste la source de vérité.
+- `CLAUDE.md` : ajout d'une section `## Agent skills` pointant vers ces trois fichiers.
+  Prose en français comme le reste du document ; titres de sous-sections en anglais, c'est
+  la forme que les skills cherchent.
+- Aucun code touché, aucun test rejoué (rien d'exécutable n'a changé).
+
+---
+
 ## 2026-09-03 — Nombres à la française dans toute l'interface
 
 - `theme.fmt_number()` : virgule décimale, zéros inutiles retirés (`1,3` · `9` · `0,25`).

@@ -40,3 +40,25 @@ Ne jamais utiliser le `python` global (3.14) : PySide6 n'y est pas installé.
 
 1. Ajouter une entrée datée en haut de `WORKLOG.md`.
 2. Commiter : `phase<N>: <verbe> <objet>`.
+
+## Agent skills
+
+Configuration lue par les skills d'ingénierie du plugin `mattpocock-skills`
+(`to-tickets`, `triage`, `to-spec`, `wayfinder`, `domain-modeling`,
+`improve-codebase-architecture`). Modifier `docs/agents/*.md` directement au besoin.
+
+### Issue tracker
+
+Les issues vivent dans les GitHub Issues de `AMoncade/study-planner-app`, pilotées par la
+CLI `gh`. Voir `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Vocabulaire canonique par défaut : `needs-triage`, `needs-info`, `ready-for-agent`,
+`ready-for-human`, `wontfix`. Voir `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Contexte unique : `CONTEXT.md` et `docs/adr/` à la racine, créés à la demande par
+`/domain-modeling` — ils ne remplacent pas `docs/ARCHITECTURE.md`.
+Voir `docs/agents/domain.md`.
